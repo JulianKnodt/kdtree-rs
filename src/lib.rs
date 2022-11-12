@@ -63,6 +63,9 @@ mod heap_element;
 pub mod kdtree;
 mod util;
 
-pub mod owned_kdtree;
 pub use crate::kdtree::ErrorKind;
 pub use crate::kdtree::KdTree;
+
+pub mod owned_kdtree;
+pub use crate::owned_kdtree::ErrorKind as OwnedErrorKind;
+pub use crate::owned_kdtree::OwnedKdTree;
